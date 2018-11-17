@@ -26,42 +26,62 @@
     </div>
     <div class="right-side bg-white">
         <div class="overlay">
+            <div class="burger-menu">
+                   <div id="menuToggle">
+                       <input type="checkbox" />
+                       <span class="s1"></span>
+                       <span class="s2"></span>
+                       <span class="s3"></span>
+                       <ul class="d-none" id="menu">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Contact</a></li>
+                           <li><a href="#">Login</a></li>
+                       </ul>
+                   </div>
+               </div>
             <div class="search-result d-none">
-                <div class="container d-flex justify-content-center flex-column">
-                    <div class="col-md-12">
-                        <form action="#">
-                            <div class="search d-flex align-items-center">
-                                <input type="text" class="search-input" value="RED SEAT">
-                                <a href="#" class="remove"><i class="material-icons text-gray">clear</i></a>
-                            </div>
-                        </form>
-                        <div class="results mt-100 mb-100">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a href="#" class="result mb-30">
-                                        <div class="result-img">
-                                            <img src="img/red_seat.png" class="img-fluid" alt="result img">
-                                        </div>
-                                        <div class="result-name">
-                                            <p>RED SEAT</p>
-                                        </div>
+                <div class="container">
+                    <div class="d-flex justify-content-center flex-column">
+                        <div class="col-12 col-md-12">
+                            <form action="#">
+                                <div class="search d-flex align-items-center">
+                                    <input type="text" class="search-input" value="RED SEAT">
+                                    <a href="#" class="remove">
+                                        <!--<i class="material-icons text-gray">clear</i>-->
+                                        <img class="img-fluid clear-img" width="40px" height="40px" src="img/remove.png" alt="remove">
                                     </a>
                                 </div>
-                                <div class="col-md-6">
-                                    <a href="#" class="result mb-30">
-                                        <div class="result-img">
-                                            <img src="img/dark_seat.png" class="img-fluid" alt="result img">
-                                        </div>
-                                        <div class="result-name">
-                                            <p>RED SEAT</p>
-                                        </div>
-                                    </a>
+                                <p class="helper-text mt-30">Type product that you are looking for</p>
+                            </form>
+                            <div class="results mt-100 mb-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <a href="#" class="result mb-30">
+                                            <div class="result-img">
+                                                <img src="img/red_seat.png" class="img-fluid" alt="result img">
+                                            </div>
+                                            <div class="result-name">
+                                                <p>RED SEAT</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6">
+                                        <a href="#" class="result mb-30">
+                                            <div class="result-img">
+                                                <img src="img/dark_seat.png" class="img-fluid" alt="result img">
+                                            </div>
+                                            <div class="result-name">
+                                                <p>RED SEAT</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="result-count">1 Searched result</div>
                         </div>
-                        <div class="result-count">1 Searched result</div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,3 +89,4 @@
 </div>
 </main>
 //= template/footer.html
+

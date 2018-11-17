@@ -7,4 +7,7 @@ $( document ).ready(function() {
     $('.remove').click(function () {
         $(".search .search-input").val("");
     })
+    $('#menuToggle input').click(function () {
+        $('#menu').toggleClass('d-none');
+    });
 });
