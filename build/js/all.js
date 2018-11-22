@@ -14,4 +14,16 @@ $( document ).ready(function() {
     $('#menuToggle input').click(function () {
         $('#menu').toggleClass('d-none');
     });
+
+    $(".in").click(function(){
+        var img=$(".product-img img");
+        img.width(img.width()+50);
+        img.height(img.height()+50);
+    });
+    $(".out").click(function(){
+        var img=$(".product-img img");
+        img.width(img.width()-50);
+        img.height(img.height()-50);
+    });
+
 });

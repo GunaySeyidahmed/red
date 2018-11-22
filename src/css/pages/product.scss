@@ -1,0 +1,223 @@
+.product-section{
+  //width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  .product-preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 25px rgba(219,219,219,0.5);
+    .product-img{
+      width: 490px;
+      height: 650px;
+      overflow: hidden;
+      img{
+        //overflow: hidden;
+      }
+    }
+    .heart{
+      font-family: $latoLight;
+      font-size: 1.9rem;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 25px;
+      right: 50px;
+      i{
+        color: $pinkColor;
+      }
+    }
+    .zoom{
+      position: absolute;
+      bottom: 25px;
+      left: 50px;
+      display: flex;
+      .in,.out{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        color: $blueColor;
+        border-color: $blueColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: 2rem;
+        font-weight: bold;
+        &:focus{
+          outline: 0 !important;
+        }
+      }
+      .out{
+        margin-left: 15px;
+      }
+    }
+    .location{
+      position: absolute;
+      bottom: 25px;
+      right: 50px;
+      .location-link{
+        i{
+          font-size: 2.6rem;
+          color: $gray8;
+        }
+      }
+      .product-search{
+        margin-left: 15px;
+        i{
+          font-size: 2.6rem;
+          color: $gray8;
+          transform: rotate(-270deg);
+        }
+      }
+    }
+
+  }
+  .product-details{
+    flex: 0 0 84%;
+    max-width: 84%;
+    margin-left: 25px;
+    margin-top: 40px;
+    .products{
+      .product-type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .product-title{
+          font-family: $latoLight;
+          font-size: 4.8rem;
+          color: $blackColor;
+          font-weight: lighter;
+        }
+        .product-info{
+            .info-title{
+              font-family: $latoRegular;
+              display: inline-block;
+              font-size: 1.8rem;
+              color: $darkGrayColor;
+              margin-right: 10px;
+            }
+        }
+      }
+      .product-name{
+        .p-title{
+          font-family: $latoLight;
+          font-size: 5.4rem;
+          letter-spacing: 2px;
+        }
+        .p-description{
+          color: $gray8;
+          font-size: 1.4rem;
+          line-height: 3rem;
+        }
+        .cost-quantity{
+            .cost-quantity-title{
+              display: flex;
+              justify-content: space-between;
+              .cost-title{
+                color: $blackColor;
+                font-family: $latoLight;
+                font-size: 1.8rem;
+                font-weight: 600;
+              }
+              .quantity-title{
+                color: $blackColor;
+                font-family: $latoLight;
+                font-size: 1.8rem;
+                font-weight: 600;
+              }
+            }
+            .cost-quantity-desc{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .cost-amount{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .cost-new{
+                  font-family: $latoBold;
+                  color: $blueColor;
+                  font-size: 4.8rem;
+                }
+                .cost-old{
+                  font-family: $latoBold;
+                  color: $blackColor;
+                  font-size: 2.4rem;
+                  text-decoration: line-through;
+                  margin-left: 10px;
+                }
+              }
+              .quantity-amount{
+                input{
+                  font-family: $latoBold;
+                  display: inline-block;
+                  width: 60px;
+                  height: 40px;
+                  padding-left: 12px;
+                  padding-right: 8px;
+                  border-radius: 20px;
+                  border-color: transparent;
+                  &:focus{
+                    outline: 0 !important;
+                  }
+                }
+                .quantity-link{
+                  display: inline-block;
+                  font-family: Lato-Regular;
+                  font-size: 1.4rem;
+                  color: #fff;
+                  padding: 10px 25px;
+                  border-radius: 25px;
+                  background-color: #0023ff;
+                  text-decoration: none;
+                  margin-left: 35px;
+                }
+              }
+            }
+        }
+      }
+      .recommend-seat{
+        display: flex;
+          .recommend-title{
+            display: inline-block;
+            font-family: $latoLight;
+            font-size: 3.4rem;
+            transform: rotate(-90deg);
+            letter-spacing: 1px;
+          }
+        .seats{
+          margin-left: -100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-section{
+    flex-direction: column !important;
+  }
+  .product-img {
+    width: 100% !important;
+    height: 500px !important;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+ .product-type{
+   display: flex;
+   .product-title {
+     font-size: 1.8rem !important;
+   }
+   .product-info{
+     display: flex;
+     flex-direction: column;
+   }
+ }
+
+}

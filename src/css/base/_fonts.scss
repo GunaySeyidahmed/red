@@ -3,3 +3,12 @@
 @font-face {
   @include font-family($myRiadProRegular);
 }
+@font-face {
+  @include font-family($latoLight);
+}
+@font-face {
+  @include font-family($latoRegular);
+}
+@font-face {
+  @include font-family($latoBold);
+}
