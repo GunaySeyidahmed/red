@@ -46,6 +46,12 @@
 .ml-15{
   margin-left: -15px;
 }
+.ml-25{
+  margin-left: 25px;
+}
+.pl-25{
+  padding-left: 25px;
+}
 .mr-15{
   margin-right: -15px;
 }
@@ -86,28 +92,45 @@
 .bg-gray{
   background-color: $gray0 !important;
 }
+.categories{
+  padding: 50px;
+}
+.category-title h3{
+  font-family: $latoLight;
+  font-size: 5.2rem;
+  color: $blackColor;
+  margin-left: -15px;
+}
+.category-info-title{
+  font-size: $latoRegular;
+  font-size: 1.8rem;
+  color: $darkGrayColor;
+  margin-right: 8px;
+}
+.category-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-around !important;
+  width: 100%;
+}
 .seat{
-  //display: flex;
-  //align-self: stretch;
+  //margin: 10px;
+  //padding: 15px;
+
   .seat-imgs{
-    width: 100%;
-    height: 160px;
-    text-align: center;
+
     img{
-      height: 100%;
-      object-fit: cover;
+
     }
   }
   .seat-desc{
-    padding-left: 25px;
     .seat-title{
       font-family: $latoLight;
       font-size: 2rem;
       color: $blackColor;
       font-weight: 600;
     }
-    .seat-subtitle
-    {
+    .seat-subtitle {
       font-family: $latoLight;
       font-size: 1.2rem;
       color: $gray8;
@@ -115,40 +138,53 @@
     }
   }
 }
+
 .cost-product{
   font-family: $latoBold;
   font-size: 1.8rem;
 }
-//.material{
-//  position: relative;
-//  width: 100%;
-//  .material__input{
-//    width: 100%;
-//    background: 0 0;
-//    border: 0;
-//    outline: 0;
-//    height: 36px;
-//    padding-right: 25px;
-//    border-bottom: 1px solid #9E9E9E;
-//    &:focus,&:valid{
-//      transition: .3s;
-//      border-bottom: 1px solid $lightGrayColor;
-//      .material__title {
-//        top: -2px;
-//
-//        color: red;
-//      }
-//
-//    }
-//    .material__title{
-//      position: absolute;
-//      //top: 50%;
-//      //transform: translateY(-50%);
-//      transition: .3s;
-//      pointer-events: none;
-//      left: 0;
-//    }
-//  }
-//
-//}
-
+.flex-1{
+  flex: 1 0 25%;
+  max-width: 25%;
+}
+.flex-2{
+  max-width: 50%;
+  flex: 2 0 50%;
+}
+.flex-3{
+  max-width: 75%;
+  flex: 3 0 75%;
+}
+.seat-imgs-3{
+  width: 290px;
+  height: 200px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.space-evenly{
+  justify-content: space-evenly !important;
+}
+.flex-shrink-2{
+  flex-shrink:2;
+}
+.flex-shrink-5{
+  flex-shrink: 5;
+}
+.p-25{
+  padding: 25px;
+}
+.flex-basis-300{
+  flex-basis: 300px;
+}
+.font-4{
+   font-size: 3rem !important;
+ }
+.font-2{
+  font-size: 2rem !important;
+}
+.font-2-8{
+  font-size: 2.5rem !important;
+}
