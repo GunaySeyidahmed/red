@@ -95,11 +95,14 @@
 .categories{
   padding: 50px;
 }
-.category-title h3{
-  font-family: $latoLight;
-  font-size: 5.2rem;
-  color: $blackColor;
-  margin-left: -15px;
+.category-title{
+  padding-right: 45px;
+  h3{
+    font-family: $latoLight;
+    font-size: 5.2rem;
+    color: $blackColor;
+  }
+
 }
 .category-info-title{
   font-size: $latoRegular;
@@ -110,13 +113,11 @@
 .category-imgs{
   display: flex;
   flex-wrap: wrap;
-  //justify-content: space-around !important;
   width: 100%;
 }
 .seat{
-  //margin: 10px;
-  //padding: 15px;
-
+  text-decoration: none !important;
+  margin: 15px;
   .seat-imgs{
 
     img{
@@ -138,26 +139,41 @@
     }
   }
 }
-
+.show-more{
+  font-family: $latoBold;
+  text-decoration: none !important;
+  font-size: 1.6rem;
+}
 .cost-product{
   font-family: $latoBold;
   font-size: 1.8rem;
 }
 .flex-1{
-  flex: 1 0 25%;
-  max-width: 25%;
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 .flex-2{
-  max-width: 50%;
-  flex: 2 0 50%;
+  max-width: 46%;
+  flex: 0 0 46%;
 }
 .flex-3{
-  max-width: 75%;
-  flex: 3 0 75%;
+  max-width: 69%;
+  flex: 0 0 69%;
+
 }
 .seat-imgs-3{
-  width: 290px;
-  height: 200px;
+   width: 290px;
+   height: 200px;
+   img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+ }
+
+.seat-imgs-2{
+  width: 240px;
+  height: 220px;
   img{
     width: 100%;
     height: 100%;
@@ -187,4 +203,10 @@
 }
 .font-2-8{
   font-size: 2.5rem !important;
+}
+.font-1-5{
+  font-size: 1.2rem !important;
+}
+.font-1-8{
+  font-size: 1.8rem !important;
 }

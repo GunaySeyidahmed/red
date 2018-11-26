@@ -1,5 +1,4 @@
 .product-section{
-  //width: 100%;
   display: flex;
   flex-wrap: wrap;
   .product-preview{
@@ -14,7 +13,6 @@
       height: 650px;
       overflow: hidden;
       img{
-        //overflow: hidden;
       }
     }
     .heart{
